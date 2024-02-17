@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Favicon Hell-->
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>catgurls</title>
+
+    <style type="text/CSS">
+
+        body {
+            background-color: rgb(190, 190, 190);
+        }
+
+        .main {
+            transform: translate(0%,100%);
+
+            text-align: center;
+            font-size : 24px;
+        }
+
+        .splashScreen {
+            cursor: pointer;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            height: 100%;
+            width: 100%;
+            transform: translate(-50%,-50%);    
+            background-color: rgba(0,0,0);
+            transition: all ease-in-out 1s;
+
+            color : white;
+            font-size : 30px;
+            display : flex;
+            justify-content: center;
+            align-items : center
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2>Welcome to my website!</h2>
+        <p>I just got this as a joke.</p>
+        <p>I really would have never considered getting one at all.</p>
+        <p>All I wanted was a really funny email domain.</p>
+        <p>But I learnt basic HTML and CSS as well and built this instead.</p>
+        <br>
+        <p>email me at jacksonrandolf@animecatgirl.club</p>
+    </div>
+
+    <div class="splashScreen">
+        <p>Hello!</p>
+    </div>
+    <!--Thank you Saikat Bishal for the code!-->
+    <script>
+        var splashScreen = document.querySelector('.splashScreen');
+        splashScreen.addEventListener('click', () => {
+            splashScreen.style.opacity = 0;
+            setTimeout(() => {
+                splashScreen.classList.add('hidden')
+            }, 610)
+        })
+    </script>
+
+</body>
+
+</html>
